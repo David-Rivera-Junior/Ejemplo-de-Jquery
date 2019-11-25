@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        var x;
+        x=$(document);
+        x.ready(inicializar);
+
+        function inicializar(){
+            var x;
+            x=$("h1");
+            x.click(presionar);
+        }
+        function presionar(){
+            var x;
+            x=$(this);
+            x.css("font-size","12px");
+        }
+        </script>
+</head>
+<body>
+    <h1> Soy un titulo</h1>
+    <p> Soy un Parrafo</p>
+    <h1>Soy un titulo</h1>
+    <p>Soy un Parrafo</p>
+    <h1>Soy un titulo</h1>
+    <p>Soy un Parrafo</p>
+    <h1>Soy un titulo</h1>
+    <p>Soy un Parrafo</p>
+</body>
+</html>

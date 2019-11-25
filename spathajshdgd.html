@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts.js"></script>
+    <script type="text" src="Estilo.css"></script>
+    <title> xpath igual</title>
+</head>
+
+<body>
+    <input type="button" id="revelar" value="Revelar"></br>
+    <p> Soy un Parrafo</p>
+    <p id="cambiame"> Soy un Parrafo</p>
+    <h1 id="cambiame"> Soy un Titulo</h1>
+    <h1> Soy otro titulo</h1>
+    <script>
+        var x;
+        x=$("document");
+        x.ready(inicio);
+
+            function inicio() {
+                var x =$("#revelar");
+                x.click(mostrar);
+            }
+        function mostrar() {
+            var x = $("h1");
+            x.css("background", "red");
+        }
+    </script>
+</body>
+
+</html>

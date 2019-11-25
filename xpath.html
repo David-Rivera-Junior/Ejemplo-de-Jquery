@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts.js"></script>
+    <script type="text" src="Estilo.css"></script>
+    <title> xpath</title>
+</head>
+
+<body>
+    <input type="button" id="revelar" value="Revelar"><br>
+    <a href="#"> Enlace 1</a></br>
+    <a href="imagen.jpg"> Enlace 2</a></br>
+    <a href="imagen.png"> Enlace 3</a></br>
+    <a href="#"> Enlace 4</a></br>
+    <a href="#"> Enlace 5</a></br>
+    <ul>
+        <li> Enlace 1</li>
+        <li> Enlace 2</li>
+        <li> Enlace 3</li>
+        <li> Enlace 4</li>
+        <li> Enlace 5</li>
+    </ul>
+    <script>
+        var x;
+        x = $(document);
+        x.ready(inicio);
+
+        function inicio() {
+            var x = $("#revelar");
+            x.click(mostrar);
+        }
+        function mostrar() {
+          /*  var x = $("[href!='#']");*/
+          var x =$("[href$='.png']")
+            x.css("background", "yellow");
+        }
+    </script>
+
+</body>
+
+</html>

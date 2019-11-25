@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+       
+        Ingrese el numero: <input type="number" id="va1"></br>
+        Ingrese el numero: <input type="number" id="va2"></br>
+        <button id="enviar">Respuesta</button>
+        <div id="respuesta"></div>
+   
+    <script>
+    $(document).ready(function(){
+        $("#enviar").click(function(){
+             n1=$("#va1").val();
+             n2=$("#va2").val();
+            $("#respuesta").html(parseFloat(n1)+parseFloat(n2));
+        });
+
+    });
+    
+    </script>
+
+
+    </body>
+</html>
